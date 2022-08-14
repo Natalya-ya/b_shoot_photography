@@ -1,0 +1,133 @@
+/* max break point is 2582*/
+
+/* BELOW 1340px  */
+@media (max-width: 84em) {
+  .text-div {
+    padding: 0 32rem;
+  }
+  /* .photos-div img {
+    height: 17.6rem;
+  } */
+}
+/* BELOW 1200px  */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .logo {
+    height: 6.4rem;
+  }
+  .section-photos {
+    padding: 3.2rem 3.2rem;
+  }
+  .text-div {
+    padding: 0 28rem;
+  }
+  .photos-div {
+    gap: 2rem;
+  }
+  /* .photos-div img {
+    height: 15rem;
+  } */
+}
+/* BELOW 900px  */
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .text-div {
+    padding: 0 20rem;
+  }
+  .photos-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffbe;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  .main-nav-a:link,
+  .main-nav-a:visited,
+  .main-nav-a:active,
+  .main-nav-a:hover {
+    font-size: 3rem;
+  }
+  .overflow-img {
+    width: 70%;
+    height: fit-content;
+  }
+}
+/* BELOW 700px  */
+@media (max-width: 44em) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .text-div {
+    padding: 0 10rem;
+  }
+  .photos-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* BELOW 500px  */
+@media (max-width: 32em) {
+  .logo {
+    height: 4.8rem;
+  }
+  .text-div {
+    padding: 0;
+  }
+  .overflow-img {
+    width: 90%;
+    height: fit-content;
+  }
+  .section-photos {
+    padding: 1.6rem 3.2rem;
+  }
+  .photos-div {
+    padding: 3.2rem 0;
+  }
+  .photos-div,
+  .hero-imgs {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+/* - FONT SIZES (px):
+10  /  12 /  14 /  16 /  18 /  20 /  24 /  30 /  36 /  44 /  52 /  62 /  74 /  86 /  98  */
